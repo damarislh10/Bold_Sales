@@ -2,20 +2,18 @@ import React, { useEffect, useState } from "react";
 import { Container, Table } from "react-bootstrap";
 import { SalesTable } from "../Components/SalesTable";
 import { TotalSalesDate } from "../Components/TotalSalesDate";
-
-import { url } from "../Helpers/url";
+import { getData } from "../Helpers/GetData";
 
 export const SalesContainer = () => {
   const [data, setData] = useState([]);
 
-  const getData = async () => {
-    const resp = await fetch(url);
-    const result = await resp.json();
-    setData(result);
-  };
-
   useEffect(() => {
-    getData();
+    const showData = async () => {
+      const data = await getData();
+      setData(data);
+    };
+
+    showData();
   }, []);
   return (
     <Container fluid>
