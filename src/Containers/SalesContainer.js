@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Container, Table } from "react-bootstrap";
 import { SalesTable } from "../Components/SalesTable";
+import { TotalSalesDate } from "../Components/TotalSalesDate";
+
 import { url } from "../Helpers/url";
 
 export const SalesContainer = () => {
@@ -17,10 +19,12 @@ export const SalesContainer = () => {
   }, []);
   return (
     <Container fluid>
+      <TotalSalesDate />
+
       <Table>
-      <caption >Tus ventas de hoy</caption>
+        <caption>Tus ventas de hoy</caption>
         <thead>
-           <tr>
+          <tr>
             <th>Transacción</th>
             <th>Fecha y hora</th>
             <th>Metodo de pago</th>
