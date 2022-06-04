@@ -1,14 +1,43 @@
-.containerBtn{
-    display: flex;
-    justify-content: space-around;
-    background-color: #fff;
+.containerBtn {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
 }
-.btnDate{
-    border: 1px solid #e5e7ef;
-    border-radius: 100px;
-    padding: 1% 10%;
-    margin: 1% 0;
-    font-weight: 700;
-    color: var(--colorText);
-    transition: 0.4s;
+.btnDate {
+  border: 1px solid #e5e7ef;
+  border-radius: 100px;
+  padding: 1% 10%;
+  margin: 1% 0;
+  font-weight: 700;
+  color: var(--colorText);
+  transition: 0.4s;
+}
+
+.container_total {
+  background-color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  padding: 3% 0 7% 0;
+}
+.titleSales {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(82deg, #111e6c -50%, #ef434e 120%);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 3% 5%;
+}
+
+.titleh2 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.priceTotal {
+  background: linear-gradient(82deg, #111e6c -50%, #ef434e 120%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
 }

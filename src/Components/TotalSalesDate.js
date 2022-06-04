@@ -18,9 +18,14 @@ export const TotalSalesDate = () => {
       <Row className="mb-5">
         <Col sm={4}>
           <div>
-            <h2>Total de ventas de hoy</h2>
-            <h3>$1'560.000</h3>
-            <span>Septiembre 21</span>
+            <div className="titleSales">
+              <h2 className="titleh2">Total de ventas de hoy</h2>
+              <img src="https://res.cloudinary.com/df90q7vvj/image/upload/v1654372096/boldPruebatecnica/icons8-informaci%C3%B3n-24_vhjlf2.png" alt="icon_Information"/>
+            </div>
+            <div className="container_total">
+              <h3 className="priceTotal">$1'560.000</h3>
+              <span>Septiembre 21</span>
+            </div>
           </div>
         </Col>
         <Col sm={8}>
@@ -28,8 +33,8 @@ export const TotalSalesDate = () => {
             <button
               className=" btnDate"
               style={{
-                backgroundColor: toggle ? "#FFF" : "#e5e7ef",
-                border: toggle ? "1px solid #fff" : " 1px solid #e5e7ef",
+                backgroundColor: toggle ? "#e5e7ef" : "#FFF",
+                border: toggle ? "1px solid #e5e7ef" : " 1px solid #FFF",
               }}
               onClick={toggleButton}
             >
@@ -38,8 +43,8 @@ export const TotalSalesDate = () => {
             <button
               className="btnDate"
               style={{
-                backgroundColor: week ? "#FFF" : "#e5e7ef",
-                border: week ? "1px solid #fff" : " 1px solid #e5e7ef",
+                backgroundColor: week ? "#e5e7ef" : "#fff",
+                border: week ? "1px solid #e5e7ef" : " 1px solid #fff",
               }}
               onClick={WeekButton}
             >
@@ -48,8 +53,8 @@ export const TotalSalesDate = () => {
             <button
               className="btnDate"
               style={{
-                backgroundColor: september ? "#FFF" : "#e5e7ef",
-                border: september ? "1px solid #fff" : " 1px solid #e5e7ef",
+                backgroundColor: september ? "#e5e7ef" : "#fff",
+                border: september ? "1px solid #e5e7ef" : " 1px solid #fff",
               }}
               onClick={septemberButton}
             >
