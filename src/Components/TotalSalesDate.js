@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { FilterSales } from "./FilterSales";
 import "../Styles/DateClick.css";
 
@@ -14,7 +14,7 @@ export const TotalSalesDate = () => {
   const septemberButton = () => setSeptember(!september);
 
   return (
-    <Container className="containerAll" fluid>
+    <Container fluid>
       <Row className="mb-5">
         <Col sm={4}>
           <div>
@@ -25,30 +25,36 @@ export const TotalSalesDate = () => {
         </Col>
         <Col sm={8}>
           <div className="containerBtn">
-            <Button
-              className="btnDate"
-              variant="light"
-              style={{ backgroundColor: toggle ? "#FFF" : "#969696" }}
+            <button
+              className=" btnDate"
+              style={{
+                backgroundColor: toggle ? "#FFF" : "#e5e7ef",
+                border: toggle ? "1px solid #fff" : " 1px solid #e5e7ef",
+              }}
               onClick={toggleButton}
             >
               Hoy
-            </Button>
-            <Button
+            </button>
+            <button
               className="btnDate"
-              variant="light"
-              style={{ backgroundColor: week ? "#FFF" : "#969696" }}
+              style={{
+                backgroundColor: week ? "#FFF" : "#e5e7ef",
+                border: week ? "1px solid #fff" : " 1px solid #e5e7ef",
+              }}
               onClick={WeekButton}
             >
               Esta semana
-            </Button>
-            <Button
+            </button>
+            <button
               className="btnDate"
-              variant="light"
-              style={{ backgroundColor: september ? "#FFF" : "#969696" }}
+              style={{
+                backgroundColor: september ? "#FFF" : "#e5e7ef",
+                border: september ? "1px solid #fff" : " 1px solid #e5e7ef",
+              }}
               onClick={septemberButton}
             >
               Septiembre
-            </Button>
+            </button>
           </div>
         </Col>
       </Row>
