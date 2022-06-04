@@ -31,7 +31,7 @@ export const TotalSalesDate = () => {
         <Col sm={8}>
           <div className="containerBtn">
             <button
-              className=" btnDate"
+              className="btnDate"
               style={{
                 backgroundColor: toggle ? "#e5e7ef" : "#FFF",
                 border: toggle ? "1px solid #e5e7ef" : " 1px solid #FFF",

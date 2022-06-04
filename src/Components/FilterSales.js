@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
-import { Button, Overlay, Popover } from "react-bootstrap";
+import {  Overlay, Popover } from "react-bootstrap";
 import { getData } from "../Helpers/GetData";
+import "../Styles/FilterSales.css";
 
 export const FilterSales = () => {
   const [filter, setFilter] = useState();
@@ -31,7 +32,12 @@ export const FilterSales = () => {
   };
   return (
     <div ref={ref}>
-      <Button onClick={handleClick}>Filtrar</Button>
+      <div className="containerBtnFilter">
+      <button className="btnFilter" onClick={handleClick}>
+        FILTRAR
+        <img className="iconFilter ms-2" src="https://res.cloudinary.com/df90q7vvj/image/upload/v1654374553/boldPruebatecnica/icons8-opciones-para-ordenar-32_rxivzp.png" alt="iconFilter"/>
+      </button>
+      </div>
       <Overlay
         show={show}
         target={target}

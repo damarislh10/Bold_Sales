@@ -1,0 +1,20 @@
+.containerBtnFilter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -12%;
+  margin-bottom: 5%;
+}
+
+.btnFilter {
+  background-color: #fff;
+  border-radius: 16px !important;
+  font-weight: 400 !important;
+  border: 1px solid #fff;
+  padding: 0.8% 6.7%;
+  margin: 1% 0;
+  transition: 0.4s;
+}
+
+.iconFilter {
+  width: 25px;
+}
