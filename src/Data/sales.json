@@ -1,5 +1,5 @@
 {
-  "sales": [
+   "sales": [
     {
       "urlIcon": "https://res.cloudinary.com/df90q7vvj/image/upload/v1654301402/boldPruebatecnica/icons8-estimar-64_uo7h1a.png",
       "isdatafono": true,
@@ -36,3 +36,4 @@
     }
   ]
 }
+
