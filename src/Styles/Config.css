@@ -1,11 +1,14 @@
-:root{
-    ---colorText:#111e6c;
+:root {
+  ---colorText: #111e6c;
+  ---backgroudNav2: #ef434e;
 }
-*{
-    color:  #111e6c;
-    background-color: #e5e7ef;
+body {
+  background-color: #e5e7ef;
+}
+* {
+  color: #111e6c;
 }
 
-.containerAll{
-    width: 92%;
+.containerAll {
+  width: 92%;
 }
