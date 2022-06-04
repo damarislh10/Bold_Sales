@@ -48,56 +48,59 @@ export const FilterSales = () => {
           />
         </button>
       </div>
-      <Overlay
-        className="container_tooltip"
-        show={show}
-        target={target}
-        placement="bottom"
-        container={ref}
-        containerPadding={20}
-      >
-        <Popover id="popover-contained">
-          <Popover.Header as="p" className="titleFilter text-center">
-            FILTRAR
-            <button className="btnClose" onClick={handleClose}>
-              <img
-                src="https://res.cloudinary.com/df90q7vvj/image/upload/v1654379039/boldPruebatecnica/icons8-eliminar_1_gprly9.svg"
-                alt="iconclose"
-              />
-            </button>
-          </Popover.Header>
-          <Popover.Body>
-            <form className="form_filter" onSubmit={handleSubmit}>
-              <input
-                type="checkbox"
-                name="datafono"
-                onChange={handleFilterChange}
-              />
-              <span className="ms-2">Cobro con datáfono&nbsp;&nbsp;</span>
-              <br />
-              <input
-                type="checkbox"
-                name="link"
-                onChange={handleFilterChange}
-              />
-              <span className="ms-2">Cobro con link de pago&nbsp;&nbsp;</span>
-              <br />
-              <input
-                type="checkbox"
-                name="todos"
-                onChange={handleFilterChange}
-              />
-              <span className="ms-2">Ver todos&nbsp;&nbsp;</span>
-              <br />
-              <div className="container_btn_Submit">
-                <button className="btn_submit" type="submit">
-                  Aplicar
-                </button>
-              </div>
-            </form>
-          </Popover.Body>
-        </Popover>
-      </Overlay>
+      <div className="animateTooltip">
+        <Overlay
+          className="container_tooltip"
+          show={show}
+          target={target}
+          placement="bottom"
+          container={ref}
+          containerPadding={20}
+          
+        >
+          <Popover id="popover-contained">
+            <Popover.Header as="p" className="titleFilter text-center">
+              FILTRAR
+              <button className="btnClose" onClick={handleClose}>
+                <img
+                  src="https://res.cloudinary.com/df90q7vvj/image/upload/v1654379039/boldPruebatecnica/icons8-eliminar_1_gprly9.svg"
+                  alt="iconclose"
+                />
+              </button>
+            </Popover.Header>
+            <Popover.Body>
+              <form className="form_filter" onSubmit={handleSubmit}>
+                <input
+                  type="checkbox"
+                  name="datafono"
+                  onChange={handleFilterChange}
+                />
+                <span className="ms-2">Cobro con datáfono&nbsp;&nbsp;</span>
+                <br />
+                <input
+                  type="checkbox"
+                  name="link"
+                  onChange={handleFilterChange}
+                />
+                <span className="ms-2">Cobro con link de pago&nbsp;&nbsp;</span>
+                <br />
+                <input
+                  type="checkbox"
+                  name="todos"
+                  onChange={handleFilterChange}
+                />
+                <span className="ms-2">Ver todos&nbsp;&nbsp;</span>
+                <br />
+                <div className="container_btn_Submit">
+                  <button className="btn_submit" type="submit">
+                    Aplicar
+                  </button>
+                </div>
+              </form>
+            </Popover.Body>
+          </Popover>
+        </Overlay>
+      </div>
     </div>
   );
 };
