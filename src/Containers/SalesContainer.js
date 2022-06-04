@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "../Data/sales.json";
+import { Container, Table } from "react-bootstrap";
+import { SalesTable } from "../Components/SalesTable";
 import { url } from "../Helpers/url";
 
 export const SalesContainer = () => {
@@ -8,13 +9,33 @@ export const SalesContainer = () => {
   const getData = async () => {
     const resp = await fetch(url);
     const result = await resp.json();
-    console.log(result);
-   setData(data);
+    setData(result);
   };
-  
-  useEffect(() => {
 
+  useEffect(() => {
     getData();
   }, []);
-  return <div>{data}</div>;
+  return (
+    <Container fluid>
+      <Table>
+      <caption >Tus ventas de hoy</caption>
+        <thead>
+           <tr>
+            <th>Transacción</th>
+            <th>Fecha y hora</th>
+            <th>Metodo de pago</th>
+            <th>ID transacción Bold</th>
+            <th>Monto</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((sale) => (
+            <tr key={sale.id}>
+              <SalesTable sale={sale} />
+            </tr>
+          ))}
+        </tbody>
+      </Table>
+    </Container>
+  );
 };
