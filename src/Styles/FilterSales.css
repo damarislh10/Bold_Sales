@@ -18,3 +18,45 @@
 .iconFilter {
   width: 25px;
 }
+
+.btn_submit {
+  background-color: rgba(239, 67, 78, 0.4);
+  color: #fff;
+  border: 0px solid rgba(239, 67, 78, 0.4);
+  border-radius: 16px;
+  font-weight: 500;
+  padding: 3% 25%;
+  text-align: center;
+  margin: 1% 0;
+  transition: 0.4s;
+}
+
+.container_btn_Submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.form_filter {
+  font-weight: 500;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  padding: 2px;
+}
+
+.titleFilter {
+  border-bottom: #fff;
+  background-color: #fff;
+}
+
+.btnClose {
+  font-weight: bold;
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+  float: right;
+  margin-top: -3%;
+}
