@@ -1,0 +1,11 @@
+:root{
+    ---colorText:#111e6c;
+}
+*{
+    color:  #111e6c;
+    background-color: #e5e7ef;
+}
+
+.containerAll{
+    width: 95%;
+}

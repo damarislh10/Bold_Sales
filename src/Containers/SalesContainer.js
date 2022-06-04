@@ -16,7 +16,7 @@ export const SalesContainer = () => {
     showData();
   }, []);
   return (
-    <Container fluid>
+    <Container className="containerAll" fluid>
       <TotalSalesDate />
 
       <Table>
