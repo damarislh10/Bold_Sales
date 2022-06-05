@@ -39,7 +39,13 @@ th {
 .imageCobro {
   width: 25px;
 }
-
+.textDeduction {
+  color: var(---grayLight);
+  font-weight: 400;
+}
+.priceDeduction {
+  color: rgba(239, 67, 78, 0.7);
+}
 .dataSale {
   color: var(---grayLight);
 }

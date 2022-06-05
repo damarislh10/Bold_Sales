@@ -20,7 +20,20 @@ export const SalesTable = ({ sale }) => {
         {sale.paymentMethod}
       </td>
       <td className="dataSale">{sale.id}</td>
-      <td className="">$ {sale.amount}</td>
+      <td className="">
+        ${sale.amount.toFixed(3)}
+        <br />
+        {sale.deduction !== undefined ? (
+          <p className="textDeduction">
+            Deducción Bold <br />{" "}
+            <span className="priceDeduction">
+              -${sale.deduction.toFixed(3)}
+            </span>
+          </p>
+        ) : (
+          ""
+        )}
+      </td>
     </>
   );
 };
