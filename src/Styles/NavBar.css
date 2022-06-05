@@ -18,3 +18,9 @@
 .link-nav {
   color: #fff !important;
 }
+
+@media only screen and (max-width: 540px) {
+  .link-nav {
+    font-size: 14px;
+  }
+}
