@@ -59,9 +59,8 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 540px) {
-  .containerBtnFilter {
-    display: flex;
-    justify-content: flex-start;
+  .btnFilter {
+    padding: 0.5% 6.7%;
+    font-size: 12px;
+  }
 }
-}
-
