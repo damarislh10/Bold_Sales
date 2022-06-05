@@ -40,9 +40,6 @@
   font-weight: 500;
 }
 
-.animateTooltip{
-  background-color: aqua !important;
-}
 input[type="checkbox"] {
   transform: scale(1.2);
   -ms-transform: scale(1.2);

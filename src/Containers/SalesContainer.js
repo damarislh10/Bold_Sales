@@ -3,6 +3,7 @@ import { Container, Table } from "react-bootstrap";
 import { SalesTable } from "../Components/SalesTable";
 import { TotalSalesDate } from "../Components/TotalSalesDate";
 import { getData } from "../Helpers/GetData";
+import "../Styles/SalesTable.css";
 
 export const SalesContainer = () => {
   const [data, setData] = useState([]);
@@ -18,11 +19,11 @@ export const SalesContainer = () => {
   return (
     <Container className="containerAll" fluid>
       <TotalSalesDate />
+      <Table className="tableSales">
+        <caption className="titleTable">Tus ventas de hoy</caption>
 
-      <Table>
-        <caption>Tus ventas de hoy</caption>
         <thead>
-          <tr>
+          <tr className="nameFilas">
             <th>Transacción</th>
             <th>Fecha y hora</th>
             <th>Metodo de pago</th>
@@ -32,7 +33,7 @@ export const SalesContainer = () => {
         </thead>
         <tbody>
           {data.map((sale) => (
-            <tr key={sale.id}>
+            <tr className="dataT" key={sale.id}>
               <SalesTable sale={sale} />
             </tr>
           ))}
