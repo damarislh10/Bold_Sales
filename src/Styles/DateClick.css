@@ -40,3 +40,16 @@
   color: transparent;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 540px) {
+  .containerBtn {
+    margin-top: 5%;
+    padding: 2%;
+  }
+  .btnDate {
+    font-size: 14px;
+    padding: 5px 4%;
+    margin: 1% 0;
+    color: var(--colorText);
+  }
+}

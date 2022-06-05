@@ -58,4 +58,10 @@ input[type="checkbox"] {
   margin-top: -3%;
 }
 
+@media only screen and (max-width: 540px) {
+  .containerBtnFilter {
+    display: flex;
+    justify-content: flex-start;
+}
+}
 

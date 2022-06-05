@@ -19,6 +19,7 @@ export const SalesContainer = () => {
   return (
     <Container className="containerAll" fluid>
       <TotalSalesDate />
+      <div  className="table-responsive">
       <Table className="tableSales">
         <caption className="titleTable">Tus ventas de hoy</caption>
 
@@ -39,6 +40,7 @@ export const SalesContainer = () => {
           ))}
         </tbody>
       </Table>
+      </div>
     </Container>
   );
 };
