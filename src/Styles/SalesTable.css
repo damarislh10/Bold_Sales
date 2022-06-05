@@ -7,7 +7,6 @@
   border-top-right-radius: 15px;
   padding: 0.5% 3%;
   font-size: 20px;
-  font-weight: 400;
   background: linear-gradient(
     90deg,
     rgba(17, 30, 108, 1) 49%,
@@ -29,7 +28,6 @@
 }
 th {
   color: var(---grayDark);
-  font-weight: 400;
 }
 
 .table > :not(:first-child) {
@@ -41,7 +39,6 @@ th {
 }
 .textDeduction {
   color: var(---grayLight);
-  font-weight: 400;
 }
 .priceDeduction {
   color: rgba(239, 67, 78, 0.7);
