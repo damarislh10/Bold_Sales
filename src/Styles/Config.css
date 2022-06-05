@@ -1,0 +1,17 @@
+:root {
+  ---colorText: #111e6c;
+  ---backgroudNav2: #ef434e;
+  ---grayDark: #323232;
+  ---grayLight: #969696;
+}
+body {
+  background-color: #e5e7ef;
+}
+* {
+  color: #111e6c;
+  font-family: "Montserrat", sans-serif;
+}
+
+.containerAll {
+  width: 92%;
+}
