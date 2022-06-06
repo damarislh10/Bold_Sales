@@ -29,5 +29,14 @@ Podras clonar y/o forkear el codigo de Bold sales haciendo uso del git clone o g
 
 **********************
 
+### Beneficios de usar css
+
+- Puedo tener  más control de los elementos y personalizar los estilos.
+- Separar archivos según los componentes y darles estilos
+
+- podrás correr el proyecto hacer uso de `npm run start`
+
+**********************
+
 ### Autora ✒️
 * Damaris Hernandez - Desarrolladora frontend - [damarislh10](https://github.com/damarislh10)
