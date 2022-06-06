@@ -25,7 +25,6 @@ table {
   min-width: 600px;
 }
 
-/*The next 3 sections make the magic happen*/
 thead,
 tbody tr {
   display: table;
