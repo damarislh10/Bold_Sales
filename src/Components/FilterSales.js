@@ -1,13 +1,36 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Overlay, Popover } from "react-bootstrap";
 import { getData } from "../Helpers/GetData";
 import "../Styles/FilterSales.css";
+import { TableSales } from "./TableSales";
 
 export const FilterSales = () => {
-  const [filter, setFilter] = useState();
+  
   const [show, setShow] = useState(false);
   const [target, setTarget] = useState(null);
-  const ref = useRef(null);
+  const [filter, setFilter] = useState({
+    dataFull:[],
+    dataProp:[],
+    name:"",
+    check:false
+  });
+
+  const {dataFull,dataProp, name, check} = filter
+  
+  const showData = async () => {
+    const data = await getData();
+    setFilter({
+      ...filter,
+      dataFull:data,
+      dataProp:data
+    })
+  };
+
+  useEffect(() => {
+    showData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
 
   const handleClick = (event) => {
     setShow(!show);
@@ -17,27 +40,32 @@ export const FilterSales = () => {
   const handleClose = () => {
     setShow(!show);
   };
-  const getCobro = async () => {
-    const data = await getData();
-    return data;
+
+  const handleFilterChange =  (e) => {
+    const { value, checked } = e.target;
+    setFilter({
+       ...filter,
+       name: value, 
+       check:checked
+      })
   };
 
-  const handleFilterChange = async (e) => {
-    const { name, checked } = e.target;
-    // console.log(name, checked);
-    const data = await getCobro();
-    if (checked === true) {
-      const filterCobro = data.filter((c) => c.cobro === name);
-      setFilter(filterCobro);
+  const validation = () =>{
+    if (check === true && name !== 'todos') {
+      const filterCobro = dataFull.filter((c) => c.cobro === filter.name);
+      setFilter({...filter, dataProp:filterCobro});
+    } else {
+      setFilter({...filter, dataProp:dataFull})
     }
-  };
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Son iguales", filter);
+    validation()
   };
+
   return (
-    <div ref={ref}>
+    <div>
       <div className="containerBtnFilter">
         <button className="btnFilter" onClick={handleClick}>
           FILTRAR
@@ -54,9 +82,7 @@ export const FilterSales = () => {
           show={show}
           target={target}
           placement="bottom"
-          container={ref}
           containerPadding={20}
-          
         >
           <Popover id="popover-contained">
             <Popover.Header as="p" className="titleFilter text-center">
@@ -71,28 +97,32 @@ export const FilterSales = () => {
             <Popover.Body>
               <form className="form_filter" onSubmit={handleSubmit}>
                 <input
-                  type="checkbox"
-                  name="datafono"
+                  type="radio"
+                  name="opcion"
+                  value="datafono"
                   onChange={handleFilterChange}
                 />
                 <span className="ms-2">Cobro con datáfono&nbsp;&nbsp;</span>
                 <br />
                 <input
-                  type="checkbox"
-                  name="link"
+                  type="radio"
+                  name="opcion"
+                  value="link"
                   onChange={handleFilterChange}
                 />
                 <span className="ms-2">Cobro con link de pago&nbsp;&nbsp;</span>
                 <br />
                 <input
-                  type="checkbox"
-                  name="todos"
+                  type="radio"
+                  name="opcion"
+                  value="todos"
+                  defaultChecked
                   onChange={handleFilterChange}
                 />
                 <span className="ms-2">Ver todos&nbsp;&nbsp;</span>
                 <br />
                 <div className="container_btn_Submit">
-                  <button className="btn_submit" type="submit">
+                  <button className= {filter.check? "btn_submit btn_submit-check" : "btn_submit"}  type="submit">
                     Aplicar
                   </button>
                 </div>
@@ -100,6 +130,7 @@ export const FilterSales = () => {
             </Popover.Body>
           </Popover>
         </Overlay>
+        <TableSales data={dataProp}/>
       </div>
     </div>
   );
