@@ -38,7 +38,7 @@ tbody tr {
 
 tbody {
   display: block;
-  max-height: 200px;
+  max-height: 235px;
   overflow-x: hidden;
   overflow-y: scroll;
 }

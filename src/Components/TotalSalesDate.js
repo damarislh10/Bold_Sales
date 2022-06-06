@@ -13,7 +13,7 @@ export const TotalSalesDate = () => {
   const septemberButton = () => setSeptember(!september);
 
   return (
-    <Container fluid>
+    <Container fluid className="container_Total">
       <Row className="mb-5">
         <Col sm={4}>
           <div>
@@ -27,7 +27,7 @@ export const TotalSalesDate = () => {
             </div>
           </div>
         </Col>
-        <Col sm={8}>
+        <Col sm={8} className="ps-4">
           <div className="containerBtn">
             <button
               className="btnDate"
