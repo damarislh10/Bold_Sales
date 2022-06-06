@@ -17,11 +17,11 @@
 
 ### Clonar repositorio
 
-podras clonar y/o forkear el codigo de Bold sales haciendo uso del git clone o git fork, según sea el caso
+Podras clonar y/o forkear el codigo de Bold sales haciendo uso del git clone o git fork, según sea el caso
 
 *********************
 
-### instalar y Corrar  App
+### Instalar y Corrar  App
 
 - Podras hacer uso del comando  `npm install` para instalar todas las dependencias y librerias usadas en el proyecto
 
