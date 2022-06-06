@@ -29,6 +29,11 @@
   transition: 0.4s;
 }
 
+.btn_submit-check {
+  background-color: rgba(239, 67, 78, 0.895);
+  border: 0px solid rgba(239, 67, 78, 0.895);
+}
+
 .container_btn_Submit {
   display: flex;
   justify-content: center;

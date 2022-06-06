@@ -38,7 +38,11 @@
   background: linear-gradient(82deg, #111e6c -50%, #ef434e 120%);
   -webkit-background-clip: text;
   color: transparent;
-  font-weight: bold;
+  font-weight: 900;
+}
+
+.btnFilter{
+  border-radius: 14px;
 }
 
 @media only screen and (max-width: 540px) {

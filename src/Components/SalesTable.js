@@ -6,7 +6,7 @@ export const SalesTable = ({ sale }) => {
     <>
       <td>
         <img className="imageCobro" src={sale.urlIcon} alt="icon" />
-        <span className="ms-2">{sale.transaction}</span>
+        <span className="ms-2 titleCobro">{sale.transaction}</span>
       </td>
       <td className="dataSale">
         {sale.date} - {sale.hour}

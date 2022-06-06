@@ -20,11 +20,70 @@
     rgba(239, 67, 78, 1) 100%
   );
 }
+/* .container-table{
+  overflow:auto;
+  height:350px;
+} */
+table {
+  min-width: 600px;
+}
+
+/*The next 3 sections make the magic happen*/
+thead,
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+tbody {
+  display: block;
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 190px;
+  padding-left: 3%;
+}
+td:nth-child(1) {
+  padding-left: 2.5%;
+}
+th:nth-child(2),
+td:nth-child(2) {
+  width: 170px;
+}
+
+th:nth-child(3) {
+  width: 150px;
+}
+td:nth-child(3) {
+  width: 165px;
+}
+th:nth-child(4) {
+  width: 150px;
+}
+td:nth-child(4) {
+  width: 155px;
+}
+th:nth-child(5) {
+  width: 138px;
+}
+td:nth-child(5) {
+  width: 130px;
+}
+
 .tableSales {
   background-color: #fff;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  overflow: scroll;
 }
 th {
   color: var(---grayDark);
@@ -34,6 +93,10 @@ th {
   border-top: 0.8px solid #969696;
 }
 
+.titleCobro {
+  text-transform: capitalize;
+  font-weight: 600;
+}
 .imageCobro {
   width: 25px;
 }
@@ -48,6 +111,7 @@ th {
 }
 
 .dataT {
+  padding-top: 2%;
   border-left: 5px solid;
   border-image: linear-gradient(
     90deg,

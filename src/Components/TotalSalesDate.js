@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { FilterSales } from "./FilterSales";
 import "../Styles/DateClick.css";
 
 export const TotalSalesDate = () => {
@@ -63,7 +62,7 @@ export const TotalSalesDate = () => {
           </div>
         </Col>
       </Row>
-      <FilterSales />
+      
     </Container>
   );
 };
