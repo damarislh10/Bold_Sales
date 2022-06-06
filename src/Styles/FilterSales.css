@@ -43,13 +43,6 @@
   font-weight: 500;
 }
 
-input[type="checkbox"] {
-  transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  padding: 2px;
-}
-
 .titleFilter {
   border-bottom: #fff;
   background-color: #fff;
