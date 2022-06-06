@@ -1,39 +1,37 @@
 {
-   "sales": [
+  "sales": [
     {
       "urlIcon": "https://res.cloudinary.com/df90q7vvj/image/upload/v1654301402/boldPruebatecnica/icons8-estimar-64_uo7h1a.png",
-      "isdatafono": true,
+      "cobro": "datafono",
       "transaction": "cobro exitoso",
       "date": "04 /06/2020",
       "paymentMethod": "* * *  * * *  * * * 7711",
       "hour": "17:14:24",
       "id": "GZEN23784UBV1",
-      "amount": 25.000,
-      "deduction": 15.000
+      "amount": 25.0,
+      "deduction": 15.0
     },
     {
       "urlIcon": "https://res.cloudinary.com/df90q7vvj/image/upload/v1654301402/boldPruebatecnica/icons8-estimar-64_uo7h1a.png",
-      "isdatafono": true,
+      "cobro": "datafono",
       "transaction": "cobro no realizado",
       "date": "04 /06/2020",
       "paymentMethod": "* * *  * * *  * * * 7711",
       "hour": "17:14:24",
       "id": "GZEN23784UBV2",
-      "amount": 15.000
+      "amount": 15.0
     },
 
     {
       "urlIcon": "https://res.cloudinary.com/df90q7vvj/image/upload/v1654301605/boldPruebatecnica/icons8-adjuntar-50_wwgfdf.png",
-      "isdatafono": false,
+      "cobro": "link",
       "transaction": "cobro exitoso",
       "date": "04 /06/2020",
       "paymentMethod": "* * *  * * *  * * * 7711",
       "hour": "17:14:24",
       "id": "GZEN23784UBV3",
-      "amount": 25.000,
-      "deduction": 15.000
-
+      "amount": 25.0,
+      "deduction": 15.0
     }
   ]
 }
-
