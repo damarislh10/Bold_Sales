@@ -40,8 +40,6 @@ Podras clonar y/o forkear el codigo de Bold sales haciendo uso del git clone o g
 -  Cuando se selecciona el botón “Hoy” o “Esta semana” o “Septiembre” aparezca el texto en la tabla y en el total de ventas.
 -  Lo realizaría por medio de estados que sera como una variable dinamica y una funcion donde se modificara este estado luego en los botones con el evento onClick ejecutaria esa función pero con una condicional que si esta oprimido mostrara el contenido del boton.
 
-- Separar archivos según los componentes y darles estilos
-
 **********************
 
 ### Autora ✒️
