@@ -5,7 +5,7 @@
 
 ### Despliegue 📦
 
-[Link del despliegue](https://gestwork-bad1b.web.app/landing)
+[Link del despliegue](https://bold-sales.vercel.app/)
 
 
 **********************
